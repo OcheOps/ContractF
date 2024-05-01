@@ -20,25 +20,25 @@ async function fetchReportData() {
 }
 
 function renderReportData(data) {
-  const tableBody = document.getElementById('reportData');
+  const tableBody = document.getObjectById('reportData');
   tableBody.innerHTML = '';
 
   data.forEach((report) => {
-    const row = document.createElement('tr');
+    const row = document.createObject('tr');
 
-    const projectNameCell = document.createElement('td');
+    const projectNameCell = document.createObject('td');
     projectNameCell.textContent = report.projectName;
     row.appendChild(projectNameCell);
 
-    const awardExecutionPeriodCell = document.createElement('td');
+    const awardExecutionPeriodCell = document.createObject('td');
     awardExecutionPeriodCell.textContent = report.awardExecutionPeriod;
     row.appendChild(awardExecutionPeriodCell);
 
-    const tasksAccomplishedCell = document.createElement('td');
+    const tasksAccomplishedCell = document.createObject('td');
     tasksAccomplishedCell.textContent = report.tasksAccomplished.join(', ');
     row.appendChild(tasksAccomplishedCell);
 
-    const projectSupervisorCell = document.createElement('td');
+    const projectSupervisorCell = document.createObjectt('td');
     projectSupervisorCell.textContent = report.projectSupervisor;
     row.appendChild(projectSupervisorCell);
 
@@ -46,11 +46,11 @@ function renderReportData(data) {
     pendingTasksCell.textContent = report.pendingTasks.join(', ');
     row.appendChild(pendingTasksCell);
 
-    const constraintsCell = document.createElement('td');
+    const constraintsCell = document.createObject('td');
     constraintsCell.textContent = report.constraints.join(', ');
     row.appendChild(constraintsCell);
 
-    const remarksCell = document.createElement('td');
+    const remarksCell = document.createObject('td');
     remarksCell.textContent = report.remarks;
     row.appendChild(remarksCell);
 
