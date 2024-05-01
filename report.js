@@ -2,6 +2,11 @@
 async function fetchReportData() {
     try {
         const response = await fetch('https://contractb.onrender.com/report' , {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
             mode: 'cors',
           });
       if (response.ok) {
