@@ -1,7 +1,7 @@
 // Function to fetch report data from the Go backend API
 async function fetchReportData() {
     try {
-        const response = await fetch('https://contractb.onrender.com/report', {
+        const response = await fetch('https://contractb.onrender.com/report' , {
             mode: 'cors',
           });
       if (response.ok) {
