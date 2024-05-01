@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation menu and other HTML content remain the same -->
+
+  <div class="container">
+    <h1 class="mt-4 mb-4">Report</h1>
+    <div class="form-group">
+      <input type="text" class="form-control" id="searchInput" placeholder="Search by project name">
+    </div>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Project Name</th>
+          <th>Department</th>
+          <th>Award Start Date</th>
+          <th>Project End Date</th>
+          <th>Tasks to Date</th>
+          <th>Tasks Remaining</th>
+          <th>Constraints</th>
+          <th>Remarks</th>
+        </tr>
+      </thead>
+      <tbody id="reportData">
+        <!-- Report data will be dynamically populated here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="report.js"></script>
+</body>
+</html>

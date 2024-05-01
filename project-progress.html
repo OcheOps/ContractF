@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Progress</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-4 mb-4">Project Progress</h1>
+    <form id="projectProgressForm">
+      <div class="form-group">
+        <label for="projectName">Project Name</label>
+        <input type="text" class="form-control" id="projectName" name="projectName" required>
+      </div>
+      <div class="form-group">
+        <label for="tasksAccomplished">Tasks Accomplished</label>
+        <textarea class="form-control" id="tasksAccomplished" name="tasksAccomplished" rows="3" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="pendingTasks">Pending Tasks</label>
+        <textarea class="form-control" id="pendingTasks" name="pendingTasks" rows="3" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="constraints">Constraints</label>
+        <textarea class="form-control" id="constraints" name="constraints" rows="3" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="remarks">Remarks</label>
+        <textarea class="form-control" id="remarks" name="remarks" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <script src="project-progress.js"></script>
+</body>
+</html>
