@@ -12,7 +12,12 @@
   <div class="container">
     <h1 class="mt-4 mb-4">Report</h1>
     <div class="form-group">
-      <input type="text" class="form-control" id="searchInput" placeholder="Search by project name">
+      <div class="input-group">
+        <input type="text" class="form-control" id="searchInput" placeholder="Search by project name">
+        <div class="input-group-append">
+          <button class="btn btn-primary" id="searchButton">Search</button>
+        </div>
+      </div>
     </div>
     <table class="table table-striped">
       <thead>
